@@ -1,0 +1,4562 @@
+openapi: 3.0.1
+info:
+  title: Settings API
+  version: v4
+servers:
+- url: :///settings
+security:
+- oauth2:
+  - api
+  - IntraService API
+paths:
+  /api/v4/clients/InitUsers:
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserInputModel_E478'
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23'
+          description: Success
+      tags:
+      - Clients
+  /api/v4/clients/LegalEntities:
+    delete:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+        description: модель удаления пользователей
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление списка клиентов
+      tags:
+      - ClientsLegalEntities
+    patch:
+      parameters:
+      - explode: true
+        in: query
+        name: id
+        required: false
+        schema:
+          format: int64
+          type: integer
+        style: form
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/xml:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/prs.odatatestxx-odata:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json-patch+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          text/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/*+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+      responses:
+        "200":
+          description: Success
+      tags:
+      - ClientsLegalEntities
+    post:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F'
+        description: группа\компания
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=minimal:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=full:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.metadata=none:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.streaming=true:
+              schema:
+                format: int64
+                type: integer
+            application/json;odata.streaming=false:
+              schema:
+                format: int64
+                type: integer
+            application/json:
+              schema:
+                format: int64
+                type: integer
+            application/xml:
+              schema:
+                format: int64
+                type: integer
+            application/prs.odatatestxx-odata:
+              schema:
+                format: int64
+                type: integer
+            text/plain:
+              schema:
+                format: int64
+                type: integer
+            text/json:
+              schema:
+                format: int64
+                type: integer
+          description: Success
+      summary: создание клиента юр. лица
+      tags:
+      - ClientsLegalEntities
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED'
+        description: пользователь
+      responses:
+        "200":
+          description: Success
+      summary: Обновление клиента юр. лица
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/Delete/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление одного клиента
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/Restore/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: восстановление одного клиента
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/ToPhysicalPerson/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/GroupsDictionary:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: search
+        required: false
+        schema:
+          nullable: true
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: top
+        required: false
+        schema:
+          default: 50
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: includeArchived
+        required: false
+        schema:
+          default: false
+          type: boolean
+        style: form
+      - explode: true
+        in: query
+        name: excludedids
+        required: false
+        schema:
+          items:
+            format: int64
+            type: integer
+          nullable: true
+          type: array
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/ImportCheck:
+    post:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/xml:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/prs.odatatestxx-odata:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json-patch+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          text/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/*+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134'
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/Import:
+    post:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/xml:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/prs.odatatestxx-odata:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/json-patch+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          text/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+          application/*+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060'
+              nullable: true
+              type: array
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0'
+                type: array
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/ManagersDictionary:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: search
+        required: false
+        schema:
+          nullable: true
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: top
+        required: false
+        schema:
+          default: 50
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: includeArchived
+        required: false
+        schema:
+          default: false
+          type: boolean
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/SearchHints:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: searchString
+        required: false
+        schema:
+          nullable: true
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: top
+        required: false
+        schema:
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: excludedids
+        required: false
+        schema:
+          items:
+            format: int64
+            type: integer
+          nullable: true
+          type: array
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+          description: Success
+      tags:
+      - ClientsLegalEntities
+  /api/v4/clients/LegalEntities/Users/Merge:
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151'
+        description: ""
+      responses:
+        "200":
+          description: Success
+      summary: объединение пользователей юр лица
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/ToEmployee:
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42'
+        description: ""
+      responses:
+        "200":
+          description: Success
+      summary: перевод пользователя клиента в сотрудника
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users:
+    delete:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+        description: модель удаления пользователей
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление списка пользователей
+      tags:
+      - ClientsLegalEntitiesUsers
+    patch:
+      parameters:
+      - explode: true
+        in: query
+        name: id
+        required: false
+        schema:
+          format: int64
+          type: integer
+        style: form
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=true:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=false:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/xml:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/prs.odatatestxx-odata:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json-patch+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          text/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/*+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+      responses:
+        "200":
+          description: Success
+      tags:
+      - ClientsLegalEntitiesUsers
+    post:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+        description: пользователь
+      responses:
+        "200":
+          description: Success
+      summary: Создание пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientUserModel_38EA'
+        description: пользователь
+      responses:
+        "200":
+          description: Success
+      summary: Обновление пользователя клиента
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/Delete/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление одного пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/Restore/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: восстановление одного пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/BlockEmail/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление одного пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/UnblockEmail/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: восстановление одного пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/ViewUserPhoto/{id}:
+    get:
+      parameters:
+      - description: идентификатор пользователя
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          description: идентификатор пользователя
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserPhotos_B2B1'
+          description: Success
+      summary: получение фото пользователя
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/RoleHints:
+    get:
+      parameters:
+      - description: ""
+        explode: true
+        in: query
+        name: searchString
+        required: false
+        schema:
+          description: ""
+          nullable: true
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.FilterHintModel_ECE3'
+                type: array
+          description: Success
+      summary: "Поиск ролей с определенным типом. Используется на форме фильтра дл\
+        я пользователей клиентов и сотрудников. Не используется контроллер ролей,\
+        \ так как не хватает прав доступа для общих разделов клиента."
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/UserDevices/{userId}:
+    get:
+      parameters:
+      - description: идентификатор пользователя
+        explode: false
+        in: path
+        name: userId
+        required: true
+        schema:
+          description: идентификатор пользователя
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserDeviceDto_4EDC'
+                type: array
+          description: Success
+      summary: получить устройства пользователя (тип и токен)
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/LegalEntities/Users/SearchHints:
+    get:
+      parameters:
+      - description: ""
+        explode: true
+        in: query
+        name: searchString
+        required: false
+        schema:
+          description: ""
+          nullable: true
+          type: string
+        style: form
+      - description: ""
+        explode: true
+        in: query
+        name: top
+        required: false
+        schema:
+          description: ""
+          format: int32
+          type: integer
+        style: form
+      - description: ""
+        explode: true
+        in: query
+        name: excludedids
+        required: false
+        schema:
+          description: ""
+          items:
+            format: int64
+            type: integer
+          nullable: true
+          type: array
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.SearchHintsModel_3054'
+                type: array
+          description: Success
+      summary: поиск пользователей клиентов
+      tags:
+      - ClientsLegalEntitiesUsers
+  /api/v4/clients/PhysicalPersons:
+    delete:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3'
+        description: модель удаления пользователей
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление списка клиентов
+      tags:
+      - ClientsPhysicalPersons
+    patch:
+      parameters:
+      - description: ""
+        explode: true
+        in: query
+        name: id
+        required: false
+        schema:
+          description: ""
+          format: int64
+          type: integer
+        style: form
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=minimal:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=full:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.metadata=none:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=true:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json;odata.streaming=false:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/xml:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/prs.odatatestxx-odata:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/json-patch+json:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          text/json:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+          application/*+json:
+            schema:
+              description: ""
+              items:
+                $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F'
+              nullable: true
+              type: array
+        description: ""
+      responses:
+        "200":
+          description: Success
+      summary: "Патч физ лица (можно найти как по id, так и по contactPersonId)"
+      tags:
+      - ClientsPhysicalPersons
+    post:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+        description: группа\компания
+      responses:
+        "200":
+          description: Success
+      summary: создание клиента физ. лица
+      tags:
+      - ClientsPhysicalPersons
+    put:
+      requestBody:
+        content:
+          application/json;odata.metadata=minimal;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=minimal;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=minimal:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=full:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.metadata=none:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.streaming=true:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json;odata.streaming=false:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/prs.odatatestxx-odata:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777'
+        description: пользователь
+      responses:
+        "200":
+          description: Success
+      summary: Обновление клиента физ. лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/Delete/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление одного клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/DeleteUser/{userid}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: userid
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: удаление одного пользователя клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/RestoreUser/{userid}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: userid
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: восстановление одного пользователя клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/Restore/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: восстановление одного клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/BlockEmail/{userid}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: userid
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: блокировка емейла пользователя клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/UnblockEmail/{userid}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: userid
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      summary: разблокировка емейла пользователя клиента физ лица
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/ToLegalEntity/{id}:
+    put:
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=minimal:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=full:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.metadata=none:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=true:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json;odata.streaming=false:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            application/prs.odatatestxx-odata:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E'
+          description: Success
+      tags:
+      - ClientsPhysicalPersons
+  /api/v4/clients/PhysicalPersons/ManagersDictionary:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: search
+        required: false
+        schema:
+          nullable: true
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: top
+        required: false
+        schema:
+          default: 50
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: includeArchived
+        required: false
+        schema:
+          default: false
+          type: boolean
+        style: form
+      responses:
+        "200":
+          content:
+            application/json;odata.metadata=minimal;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=minimal:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=full:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.metadata=none:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=true:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json;odata.streaming=false:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            application/prs.odatatestxx-odata:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+                type: array
+          description: Success
+      tags:
+      - ClientsPhysicalPersons
+  /odata/v4/WorkflowStatusTransitions:
+    get:
+      parameters:
+      - explode: true
+        in: query
+        name: $select
+        required: false
+        schema:
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: $expand
+        required: false
+        schema:
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: $filter
+        required: false
+        schema:
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: $orderby
+        required: false
+        schema:
+          type: string
+        style: form
+      - explode: true
+        in: query
+        name: $count
+        required: false
+        schema:
+          type: boolean
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                additionalProperties: {}
+                type: object
+          description: Success
+      tags:
+      - WorkflowStatusTransitions
+components:
+  schemas:
+    IntraService5.Shared.Enums.InitClientUserChannel_342B:
+      enum:
+      - 0
+      - 10
+      - 20
+      - 30
+      - 40
+      - 50
+      - 60
+      format: int32
+      type: integer
+    IntraService5.Common.Models.MailAddress_3450:
+      additionalProperties: false
+      properties:
+        name:
+          nullable: true
+          type: string
+        address:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.Shared.Enums.FieldType_3A22:
+      enum:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          type: integer
+        value:
+          nullable: true
+          type: string
+        type:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.FieldType_3A22'
+      type: object
+    IntraService5.Shared.Enums.ClientType_6CE9:
+      enum:
+      - 10
+      - 20
+      - 30
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9:
+      additionalProperties: false
+      properties:
+        alias:
+          nullable: true
+          type: string
+        value:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.InitClientUserInputModel_E478:
+      additionalProperties: false
+      properties:
+        initClientUserChannel:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.InitClientUserChannel_342B'
+        emailAddress:
+          nullable: true
+          type: string
+        emailAddressObserverList:
+          items:
+            $ref: '#/components/schemas/IntraService5.Common.Models.MailAddress_3450'
+          nullable: true
+          type: array
+        phoneNumber:
+          nullable: true
+          type: string
+        telegramId:
+          format: int64
+          nullable: true
+          type: integer
+        telegramUserName:
+          nullable: true
+          type: string
+        webChatId:
+          format: uuid
+          nullable: true
+          type: string
+        userFirstName:
+          nullable: true
+          type: string
+        userLastName:
+          nullable: true
+          type: string
+        userMiddleName:
+          nullable: true
+          type: string
+        isSelfRegistrationConsider:
+          type: boolean
+        fieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+        password:
+          nullable: true
+          type: string
+        clientType:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.ClientType_6CE9'
+        taxpayerNumber:
+          nullable: true
+          type: string
+        web:
+          nullable: true
+          type: string
+        clientName:
+          nullable: true
+          type: string
+        fieldValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+      type: object
+    IntraService5.Shared.Enums.UserType_E5AC:
+      enum:
+      - 10
+      - 20
+      format: int32
+      type: integer
+    IntraService5.Shared.Enums.UserGroupType_B284:
+      enum:
+      - 10
+      - 20
+      - 30
+      - 40
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Models.InitClientUserOutputModel_5E23:
+      additionalProperties: false
+      example:
+        userGroupId: 6
+        errorMessages:
+        - errorMessages
+        - errorMessages
+        warningMessages:
+        - warningMessages
+        - warningMessages
+        clientType: null
+        observerIds:
+        - 5
+        - 5
+        userGroupType: null
+        isUserByAdditionalEmail: true
+        userType: null
+        managerId: 5
+        employeeGroupId: 1
+        userId: 0
+        isSuccess: true
+      properties:
+        userId:
+          format: int64
+          nullable: true
+          type: integer
+        userGroupId:
+          format: int64
+          nullable: true
+          type: integer
+        employeeGroupId:
+          format: int64
+          nullable: true
+          type: integer
+        userType:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.UserType_E5AC'
+        userGroupType:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.UserGroupType_B284'
+        clientType:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.ClientType_6CE9'
+        managerId:
+          format: int64
+          nullable: true
+          type: integer
+        isSuccess:
+          type: boolean
+        observerIds:
+          items:
+            format: int64
+            type: integer
+          nullable: true
+          type: array
+        errorMessages:
+          items:
+            type: string
+          nullable: true
+          type: array
+        warningMessages:
+          items:
+            type: string
+          nullable: true
+          type: array
+        isUserByAdditionalEmail:
+          type: boolean
+      type: object
+    IntraService5.SettingsApi.Models.BaseNamedModel_10D7:
+      additionalProperties: false
+      example:
+        searchString: searchString
+        isArchived: true
+        sortOrder: sortOrder
+        name: name
+        description: description
+        id: 0
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          format: int64
+          nullable: true
+          type: integer
+        updatedAt:
+          format: date-time
+          type: string
+        name:
+          nullable: true
+          type: string
+        sortOrder:
+          nullable: true
+          type: string
+        description:
+          nullable: true
+          type: string
+        isArchived:
+          nullable: true
+          type: boolean
+        searchString:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.PhoneNumbersListDto_CB78:
+      additionalProperties: false
+      properties:
+        phoneNumber:
+          nullable: true
+          type: string
+        default:
+          type: boolean
+        phoneExt:
+          nullable: true
+          type: string
+        phoneInternational:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.ClientLegalEntityCreateModel_8A9F:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          type: integer
+        description:
+          nullable: true
+          type: string
+        isArchived:
+          type: boolean
+        timeZoneCode:
+          nullable: true
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        updatedBy:
+          nullable: true
+          type: string
+        language:
+          nullable: true
+          type: string
+        address:
+          nullable: true
+          type: string
+        web:
+          nullable: true
+          type: string
+        domains:
+          items:
+            type: string
+          nullable: true
+          type: array
+        userGroupTags:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+          nullable: true
+          type: array
+        fieldsValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+        fieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+        managerId:
+          format: int64
+          nullable: true
+          type: integer
+        name:
+          nullable: true
+          type: string
+        taxpayerNumber:
+          nullable: true
+          type: string
+        email:
+          nullable: true
+          type: string
+        phoneNumbersList:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.PhoneNumbersListDto_CB78'
+          nullable: true
+          type: array
+        contactPersonId:
+          format: int64
+          nullable: true
+          type: integer
+        additionalData:
+          additionalProperties: {}
+          nullable: true
+          type: object
+        contactPersonPhoneNumbersList:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.PhoneNumbersListDto_CB78'
+          nullable: true
+          type: array
+        contactPersonEmail:
+          nullable: true
+          type: string
+        roleId:
+          format: int64
+          nullable: true
+          type: integer
+        contactPersonFirstName:
+          nullable: true
+          type: string
+        contactPersonLastName:
+          nullable: true
+          type: string
+        contactPersonMiddleName:
+          nullable: true
+          type: string
+        contactPersonPassword:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.ClientLegalEntityModel_62ED:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          type: integer
+        description:
+          nullable: true
+          type: string
+        isArchived:
+          type: boolean
+        timeZoneCode:
+          nullable: true
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        updatedBy:
+          nullable: true
+          type: string
+        language:
+          nullable: true
+          type: string
+        address:
+          nullable: true
+          type: string
+        web:
+          nullable: true
+          type: string
+        domains:
+          items:
+            type: string
+          nullable: true
+          type: array
+        userGroupTags:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+          nullable: true
+          type: array
+        fieldsValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+        fieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+        managerId:
+          format: int64
+          nullable: true
+          type: integer
+        name:
+          nullable: true
+          type: string
+        taxpayerNumber:
+          nullable: true
+          type: string
+        email:
+          nullable: true
+          type: string
+        phoneNumbersList:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.PhoneNumbersListDto_CB78'
+          nullable: true
+          type: array
+        contactPersonId:
+          format: int64
+          nullable: true
+          type: integer
+        additionalData:
+          additionalProperties: {}
+          nullable: true
+          type: object
+      type: object
+    Microsoft.AspNetCore.JsonPatch.Operations.OperationType_378D:
+      enum:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      format: int32
+      type: integer
+    Microsoft.AspNetCore.JsonPatch.Operations.Operation_4C6F:
+      additionalProperties: false
+      properties:
+        operationType:
+          $ref: '#/components/schemas/Microsoft.AspNetCore.JsonPatch.Operations.OperationType_378D'
+        path:
+          nullable: true
+          type: string
+        op:
+          nullable: true
+          type: string
+        from:
+          nullable: true
+          type: string
+        value:
+          nullable: true
+      type: object
+    IntraService5.SettingsApi.Models.EntitiesDeletionModel_18E3:
+      additionalProperties: false
+      properties:
+        ids:
+          items:
+            format: int64
+            type: integer
+          nullable: true
+          type: array
+        isTotalDeletion:
+          type: boolean
+        correlationId:
+          format: uuid
+          type: string
+      type: object
+    IntraService5.Common.Enums.ErrorType_C6F4:
+      enum:
+      - 10
+      - 20
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Commands.BaseCommandResult_2D4E:
+      additionalProperties: false
+      example:
+        errorType: null
+        message: message
+        isSuccess: true
+      properties:
+        isSuccess:
+          type: boolean
+        message:
+          nullable: true
+          type: string
+        errorType:
+          $ref: '#/components/schemas/IntraService5.Common.Enums.ErrorType_C6F4'
+      type: object
+    IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModel_0060:
+      additionalProperties: false
+      properties:
+        userLastName:
+          nullable: true
+          type: string
+        userFirstName:
+          nullable: true
+          type: string
+        userMiddleName:
+          nullable: true
+          type: string
+        userEmail:
+          nullable: true
+          type: string
+        userPhoneNumbers:
+          nullable: true
+          type: string
+        userRole:
+          nullable: true
+          type: string
+        userGroups:
+          nullable: true
+          type: string
+        groupName:
+          nullable: true
+          type: string
+        groupAddress:
+          nullable: true
+          type: string
+        groupWeb:
+          nullable: true
+          type: string
+        groupPhoneNumbers:
+          nullable: true
+          type: string
+        groupInn:
+          nullable: true
+          type: string
+        groupTags:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportError_D1ED:
+      additionalProperties: false
+      example:
+        row: 5
+        message: message
+      properties:
+        row:
+          format: int32
+          type: integer
+        message:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelCheckResult_B134:
+      additionalProperties: false
+      example:
+        rowsMessages:
+        - row: 5
+          message: message
+        - row: 5
+          message: message
+        groupsUpdated: 6
+        usersUpdated: 5
+        groupsCreated: 0
+        usersCreated: 1
+      properties:
+        groupsCreated:
+          format: int32
+          type: integer
+        groupsUpdated:
+          format: int32
+          type: integer
+        usersCreated:
+          format: int32
+          type: integer
+        usersUpdated:
+          format: int32
+          type: integer
+        rowsMessages:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportError_D1ED'
+          nullable: true
+          type: array
+      type: object
+    IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportType_D08C:
+      enum:
+      - 10
+      - 20
+      - 30
+      - 40
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportModelImportResult_6AC0:
+      additionalProperties: false
+      example:
+        row: 0
+        type: null
+        message: message
+      properties:
+        type:
+          $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UsersAndGroupsExcelImportType_D08C'
+        row:
+          format: int32
+          type: integer
+        message:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.SearchHintsModel_3054:
+      additionalProperties: false
+      example:
+        path: path
+        namePath: namePath
+        level: 6
+        isArchived: true
+        name: name
+        description: description
+        fullName: fullName
+        id: 0
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          format: int64
+          nullable: true
+          type: integer
+        updatedAt:
+          format: date-time
+          type: string
+        name:
+          nullable: true
+          type: string
+        description:
+          nullable: true
+          type: string
+        namePath:
+          nullable: true
+          type: string
+        fullName:
+          nullable: true
+          type: string
+        level:
+          format: int64
+          nullable: true
+          type: integer
+        path:
+          nullable: true
+          type: string
+        isArchived:
+          nullable: true
+          type: boolean
+      type: object
+    IntraService5.SettingsApi.Models.Clients.MergeClientUsersModel_F151:
+      additionalProperties: false
+      properties:
+        clientId:
+          format: int64
+          type: integer
+        mainUserId:
+          format: int64
+          type: integer
+        deletedUserId:
+          format: int64
+          type: integer
+        taskCountLimit:
+          format: int32
+          type: integer
+      type: object
+    IntraService5.SettingsApi.Models.ClientUserToEmployeeModel_1D42:
+      additionalProperties: false
+      properties:
+        userId:
+          format: int64
+          type: integer
+        roleId:
+          format: int64
+          nullable: true
+          type: integer
+      type: object
+    IntraService5.Shared.SqlServerStorage.DataModel.PhoneNumberValue_925D:
+      additionalProperties: false
+      properties:
+        phoneNumber:
+          nullable: true
+          type: string
+        default:
+          type: boolean
+        phoneExt:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.UserGroupDto_2E44:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          nullable: true
+          type: integer
+        updatedAt:
+          format: date-time
+          type: string
+        name:
+          nullable: true
+          type: string
+        sortOrder:
+          nullable: true
+          type: string
+        description:
+          nullable: true
+          type: string
+        isArchived:
+          nullable: true
+          type: boolean
+        searchString:
+          nullable: true
+          type: string
+        isDefault:
+          type: boolean
+      type: object
+    IntraService5.SettingsApi.Models.ClientUserModel_38EA:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          nullable: true
+          type: integer
+        firstName:
+          nullable: true
+          type: string
+        lastName:
+          nullable: true
+          type: string
+        middleName:
+          nullable: true
+          type: string
+        email:
+          nullable: true
+          type: string
+        phoneNumbersList:
+          items:
+            $ref: '#/components/schemas/IntraService5.Shared.SqlServerStorage.DataModel.PhoneNumberValue_925D'
+          nullable: true
+          type: array
+        additionalEmails:
+          items:
+            type: string
+          nullable: true
+          type: array
+        type:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.UserType_E5AC'
+        roleId:
+          format: int64
+          nullable: true
+          type: integer
+        timeZoneCode:
+          nullable: true
+          type: string
+        language:
+          nullable: true
+          type: string
+        password:
+          nullable: true
+          type: string
+        userGroups:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.UserGroupDto_2E44'
+          nullable: true
+          type: array
+        userTags:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+          nullable: true
+          type: array
+        fieldsValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+        fotoImage:
+          nullable: true
+          type: string
+        isNewFoto:
+          type: boolean
+        additionalData:
+          additionalProperties: {}
+          nullable: true
+          type: object
+        emailConfirmed:
+          nullable: true
+          type: boolean
+        updatedAt:
+          format: date-time
+          type: string
+        isArchived:
+          nullable: true
+          type: boolean
+        userName:
+          nullable: true
+          type: string
+        setContactPerson:
+          type: boolean
+        phoneNumbers:
+          deprecated: true
+          items:
+            $ref: '#/components/schemas/IntraService5.Shared.SqlServerStorage.DataModel.PhoneNumberValue_925D'
+          nullable: true
+          type: array
+        fieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+      type: object
+    IntraService5.SettingsApi.Models.UserPhotos_B2B1:
+      additionalProperties: false
+      example:
+        userThumbnai: userThumbnai
+        userFoto: userFoto
+      properties:
+        userFoto:
+          nullable: true
+          type: string
+        userThumbnai:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.FilterHintModel_ECE3:
+      additionalProperties: false
+      example:
+        isArchived: true
+        name: name
+        id: 0
+        value: value
+      properties:
+        id:
+          format: int64
+          type: integer
+        value:
+          nullable: true
+          type: string
+        name:
+          nullable: true
+          type: string
+        isArchived:
+          nullable: true
+          type: boolean
+      type: object
+    IntraService5.Shared.Enums.DeviceType_7442:
+      enum:
+      - 10
+      - 20
+      - 30
+      - 40
+      - 50
+      format: int32
+      type: integer
+    IntraService5.SettingsApi.Models.UserDeviceDto_4EDC:
+      additionalProperties: false
+      example:
+        deviceType: null
+        token: token
+      properties:
+        deviceType:
+          $ref: '#/components/schemas/IntraService5.Shared.Enums.DeviceType_7442'
+        token:
+          nullable: true
+          type: string
+      type: object
+    IntraService5.SettingsApi.Models.ClientPhysicalPersonModel_E777:
+      additionalProperties: false
+      properties:
+        id:
+          format: int64
+          type: integer
+        description:
+          nullable: true
+          type: string
+        isArchived:
+          type: boolean
+        timeZoneCode:
+          nullable: true
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+        updatedBy:
+          nullable: true
+          type: string
+        language:
+          nullable: true
+          type: string
+        address:
+          nullable: true
+          type: string
+        web:
+          nullable: true
+          type: string
+        domains:
+          items:
+            type: string
+          nullable: true
+          type: array
+        userGroupTags:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+          nullable: true
+          type: array
+        fieldsValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+        fieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+        managerId:
+          format: int64
+          nullable: true
+          type: integer
+        contactPersonFirstName:
+          nullable: true
+          type: string
+        contactPersonLastName:
+          nullable: true
+          type: string
+        contactPersonMiddleName:
+          nullable: true
+          type: string
+        contactPersonPassword:
+          nullable: true
+          type: string
+        contactPersonRoleId:
+          format: int64
+          nullable: true
+          type: integer
+        contactPersonEmail:
+          nullable: true
+          type: string
+        contactPersonAdditionalEmails:
+          items:
+            type: string
+          nullable: true
+          type: array
+        contactPersonPhoneNumbersList:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.PhoneNumbersListDto_CB78'
+          nullable: true
+          type: array
+        contactPersonFieldsValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldValueModel_86F9'
+          nullable: true
+          type: array
+        contactPersonFieldIdValues:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.AdditionalFieldIdValueModel_15E7'
+          nullable: true
+          type: array
+        contactPersonUserTags:
+          items:
+            $ref: '#/components/schemas/IntraService5.SettingsApi.Models.BaseNamedModel_10D7'
+          nullable: true
+          type: array
+        contactPersonFotoImage:
+          nullable: true
+          type: string
+        contactPersonIsNewFoto:
+          type: boolean
+        additionalData:
+          additionalProperties: {}
+          nullable: true
+          type: object
+        contactPersonId:
+          format: int64
+          nullable: true
+          type: integer
+        emailConfirmed:
+          nullable: true
+          type: boolean
+      type: object
+  securitySchemes:
+    oauth2:
+      flows:
+        implicit:
+          authorizationUrl: https://login.intradesk.ru/connect/authorize
+          scopes:
+            api: IntraService API
+      type: oauth2
